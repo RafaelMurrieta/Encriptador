@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="encriptador.css">
+</head>
+<body>
+<header>
+  <img src="../imgEncriptador/logoAlura.jpeg"  alt="">
+</header>
+
+
+    <div class="enc2">
+    <div class="enc"><input id="uno" type="text" placeholder="ingrese su texto aqui"> </input>
+        <img src="../imgEncriptador/Vector.png" alt="">
+        <p id="adv"> Solo ascentos y en minusculas </p>
+            <button onclick="encriptarMensaje()" id="encriptar">Encriptar</button>
+            <button onclick="desencriptarMensaje()" id="desencriptar">Desencriptar</button>
+        </div>
+       
+    </div>
+    <div class="des">  
+          <aside>
+            <textarea name="texto" id="texto" cols="30" rows="10" placeholder=" Aqui esta la codificacion" oninput="actualizarBoton()"></textarea>
+           
+        <button id="clipboard" onclick="copyText()">Copiar</button>
+    </aside>
+</div>
+
+    
+
+    
+<script src="encriptador.js"></script>
+</body>
+
+
+</html>
